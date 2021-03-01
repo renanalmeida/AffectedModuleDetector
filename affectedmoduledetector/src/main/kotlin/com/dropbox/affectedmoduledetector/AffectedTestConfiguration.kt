@@ -8,9 +8,9 @@ package com.dropbox.affectedmoduledetector
  */
 open class AffectedTestConfiguration {
 
-    var assembleAndroidTestTask : String? = "assembleDebugAndroidTest"
-    var runAndroidTestTask : String?  = "connectedDebugAndroidTest"
-    var jvmTestTask : String? = "testDebugUnitTest"
+    var assembleAndroidTestTask : String? = "assembleDebugAndroidTest --stacktrace"
+    var runAndroidTestTask : String?  = "connectedDebugAndroidTest --stacktrace"
+    var jvmTestTask : String? = "testDebugUnitTest --stacktrace"
 
     companion object {
         const val name = "affectedTestConfiguration"
